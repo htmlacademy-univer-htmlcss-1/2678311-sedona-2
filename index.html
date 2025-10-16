@@ -11,7 +11,7 @@
 
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link">Главая</a>
+            <a class="navigation-link active" href="#">Главая</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -30,6 +30,7 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden"> Избранное</span>
+              <span class="counter">12</span>
             </a>
           </li>
           <li class="navigation-item">
@@ -56,16 +57,14 @@
       </div>
 
       <section class="advantages">
-        <h2 class="visually-hidden">Приемущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
-          <li class="advantages-item">
+          <li class="advantages-item image-right">
             <h3 class="advantages-title">Настоящий городок</h3>
             <p class="advantages-description">
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
-          </li>
 
-          <li class="advantages-item">
             <img class="advantages-img" src="#" alt="Вид улицы города SEDONA" />
           </li>
 
@@ -90,11 +89,8 @@
             </p>
           </li>
 
-          <li class="advantages-item">
+          <li class="advantages-item image-left">
             <img class="advantages-img" src="#" alt="Мост Дьявола" />
-          </li>
-
-          <li class="advantages-item">
             <h3 class="advantages-title">Там есть мост дьявола</h3>
             <p class="advantages-description">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
@@ -161,6 +157,7 @@
             type="email"
             name="newsletter-email"
             placeholder="Ваш e-mail"
+            required
           />
           <button class="button button-blue" type="submit">Подписаться</button>
         </form>

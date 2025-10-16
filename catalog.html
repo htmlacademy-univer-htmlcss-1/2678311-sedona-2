@@ -23,7 +23,7 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link">Гостиницы</a>
+            <a class="navigation-link active" href="#">Гостиницы</a>
           </li>
         </ul>
 
@@ -36,6 +36,7 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden"> Избранное</span>
+              <span class="counter">12</span>
             </a>
           </li>
           <li class="navigation-item">
@@ -55,7 +56,7 @@
             </a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
+            <a class="breadcrumbs-link" href="#">Гостиницы</a>
           </li>
         </ul>
       </header>
@@ -177,15 +178,17 @@
           <option value="expensive">Сначала дорогие</option>
         </select>
 
-        <a href="#" class="button button-active">
-          <span class="visually-hidden">Вид "Сетка"</span>
-        </a>
-        <a class="button" href="#">
-          <span class="visually-hidden">Вид "Презентация"</span>
-        </a>
-        <a class="button" href="#">
-          <span class="visually-hidden">Вид "Список"</span>
-        </a>
+        <div class="catalog-view">
+          <a href="#" class="button button-active">
+            <span class="visually-hidden">Вид "Сетка"</span>
+          </a>
+          <a class="button" href="#">
+            <span class="visually-hidden">Вид "Презентация"</span>
+          </a>
+          <a class="button" href="#">
+            <span class="visually-hidden">Вид "Список"</span>
+          </a>
+        </div>
 
         <ul class="hotel-list">
           <li class="hotel-card">
@@ -199,8 +202,10 @@
             </a>
             <p class="hotel-card-type">Гостиница</p>
             <p class="hotel-card-price">От 4000 ₽</p>
-            <a class="button-brown button" href="#">Подробнее</a>
-            <a class="button-blue button" href="#">В Избранное</a>
+            <a class="button button-brown" href="#">Подробнее</a>
+            <button class="button button-blue" type="button">
+              В Избранное
+            </button>
 
             <div class="star-list">
               <span class="star visually-hidden">Звезда</span>
@@ -223,8 +228,10 @@
             </a>
             <p class="hotel-card-type">Гостиница</p>
             <p class="hotel-card-price">От 5000 ₽</p>
-            <a class="button-brown button" href="#">Подробнее</a>
-            <a class="button-green button" href="#">В Избранном</a>
+            <a class="button button-brown" href="#">Подробнее</a>
+            <button class="button button-blue active" type="button">
+              В Избранном
+            </button>
 
             <div class="star-list">
               <span class="star visually-hidden">Звезда</span>
@@ -247,8 +254,10 @@
             </a>
             <p class="hotel-card-type">Гостиница</p>
             <p class="hotel-card-price">От 2500 ₽</p>
-            <a class="button-brown button" href="#">Подробнее</a>
-            <a class="button-blue button" href="#">В Избранное</a>
+            <a class="button button-brown" href="#">Подробнее</a>
+            <button class="button button-blue" type="button">
+              В Избранное
+            </button>
 
             <div class="star-list">
               <span class="star visually-hidden">Звезда</span>
@@ -271,8 +280,10 @@
             </a>
             <p class="hotel-card-type">Гостиница</p>
             <p class="hotel-card-price">От 1500 ₽</p>
-            <a class="button-brown button" href="#">Подробнее</a>
-            <a class="button-blue button" href="#">В Избранное</a>
+            <a class="button button-brown" href="#">Подробнее</a>
+            <button class="button button-blue" type="button">
+              В Избранное
+            </button>
 
             <div class="star-list">
               <span class="star visually-hidden">Звезда</span>
@@ -284,7 +295,7 @@
 
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
+            <a class="pagination-link pagination-current" href="#">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
@@ -308,11 +319,16 @@
     <footer class="footer-catalog">
       <section class="footer-catalog-newsletter">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <form class="newsletter-form">
+        <form
+          class="newsletter-form"
+          target="_blank"
+          action="https://echo.htmlacademy.ru/"
+        >
           <input
             type="email"
             name="newsletter-email"
             placeholder="Ваш e-mail"
+            required
           />
           <button class="button button-blue" type="submit">Подписаться</button>
         </form>
