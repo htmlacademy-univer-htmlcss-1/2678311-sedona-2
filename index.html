@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <header class="page-header">
@@ -40,7 +41,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="button button-brown" href="#">Хочу сюда!</a>
+            <a class="button button-main" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -72,8 +73,8 @@
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
           <li class="advantages-item image-right">
-            <h3 class="advantages-title">Настоящий городок</h3>
-            <p class="advantages-description">
+            <h3 class="header-3 subscription">Настоящий городок</h3>
+            <p class="advantages-description subscription">
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
 
@@ -86,22 +87,22 @@
             />
           </li>
 
-          <li class="advantages-item">
-            <h3 class="advantages-title">Небольшая площадь</h3>
+          <li class="advantages-item saturated-12">
+            <h3 class="header-3">Небольшая площадь</h3>
             <p class="advantages-description">
               Все достопримечательности находятся очень близко
             </p>
           </li>
 
-          <li class="advantages-item">
-            <h3 class="advantages-title">Красивая дорога</h3>
+          <li class="advantages-item saturated-20">
+            <h3 class="header-3">Красивая дорога</h3>
             <p class="advantages-description">
               Ехать в Седону из Лас-Вегаса совсем не скучно!
             </p>
           </li>
 
-          <li class="advantages-item">
-            <h3 class="advantages-title">Мало туристов</h3>
+          <li class="advantages-item saturated-12">
+            <h3 class="header-3">Мало туристов</h3>
             <p class="advantages-description">
               Большинство едет в Гранд Каньон и толпится там
             </p>
@@ -115,19 +116,19 @@
               width="800"
               height="385"
             />
-            <h3 class="advantages-title">Там есть мост дьявола</h3>
-            <p class="advantages-description">
+            <h3 class="header-3 subscription">Там есть мост дьявола</h3>
+            <p class="advantages-description subscription">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
           </li>
         </ul>
       </section>
 
-      <div class="promo">
+      <div class="promo saturated-12">
         <strong class="promo-strong"
           >Приезжайте в Седону отдохнуть в комфорте и уюте!</strong
         >
-        <p class="promo-description">
+        <p class="intro-description">
           Опытный персонал и качественное обслуживание!
         </p>
       </div>
@@ -136,22 +137,22 @@
         <h2 class="visually-hidden">Рекомендации</h2>
 
         <ul class="recommendations-list">
-          <li class="recommendations-item">
-            <h3 class="recommendations-title">Жильё</h3>
+          <li class="recommendations-item hotel-logo saturated-20">
+            <h3 class="header-3">Жильё</h3>
             <p class="recommendations-description">
               Рекомендуем пожить в настоящем мотеле, всё как в кино!
             </p>
           </li>
 
-          <li class="recommendations-item">
-            <h3 class="recommendations-title">Еда</h3>
+          <li class="recommendations-item food-logo saturated-12">
+            <h3 class="header-3">Еда</h3>
             <p class="recommendations-description">
               Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
 
-          <li class="recommendations-item">
-            <h3 class="recommendations-title">Сувениры</h3>
+          <li class="recommendations-item present-logo saturated-20">
+            <h3 class="header-3">Сувениры</h3>
             <p class="recommendations-description">
               Не только китайского, но и настоящего местного производства!
             </p>
@@ -162,12 +163,12 @@
       <section class="hotel-search">
         <h2 class="visually-hidden">Поиск отеля</h2>
         <p class="hotel-search-description"><b>Заинтересовались?</b></p>
-        <p class="hotel-search-description">
+        <p class="intro-description">
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие
           предложения гостиниц в Седоне
         </p>
 
-        <a class="button button-brown" href="catalog.html"
+        <a class="button button-main big-size" href="catalog.html"
           >Поиск гостиницы в Седоне</a
         >
       </section>
@@ -175,7 +176,10 @@
 
     <footer class="footer-index">
       <section class="footer-index-newsletter">
-        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+        <h2 class="header-2 subscription">Подпишитесь на рассылку</h2>
+        <p class="intro-description subscription">
+          Только полезная информация и никакого спама, честное бойскаутское!
+        </p>
         <form class="newsletter-form">
           <input
             type="email"
@@ -183,7 +187,9 @@
             placeholder="Ваш e-mail"
             required
           />
-          <button class="button button-blue" type="submit">Подписаться</button>
+          <button class="button button-additional big-size" type="submit">
+            Подписаться
+          </button>
         </form>
       </section>
 
@@ -191,19 +197,19 @@
         <h2 class="visually-hidden">Связаться с нами</h2>
 
         <ul class="contacts-list">
-          <li class="contacts-item">
+          <li class="contacts-item vkontakte">
             <a class="contacts-link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Vkontakte</span>
             </a>
           </li>
 
-          <li class="contacts-item">
+          <li class="contacts-item telegram">
             <a class="contacts-link" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Telegram</span>
             </a>
           </li>
 
-          <li class="contacts-item">
+          <li class="contacts-item youtube">
             <a
               class="contacts-link"
               href="https://www.youtube.com/user/htmlacademyru"
@@ -213,17 +219,23 @@
           </li>
         </ul>
 
-        <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <div class="phone">
+          <a class="contacts-phone" href="tel:+78128121212"
+            >+7 (812) 812-12-12</a
+          >
+        </div>
 
-        <a class="htmlacademy-logo" href="#">
-          <img
-            class="htmlacademy-logo-img"
-            src="images/icons/html-academy-logo.svg"
-            alt="Логотип htmlacademy"
-            width="115"
-            height="33"
-          />
-        </a>
+        <div class="htmlacademy">
+          <a class="htmlacademy-logo" href="#">
+            <img
+              class="htmlacademy-logo-img"
+              src="images/icons/html-academy-logo.svg"
+              alt="Логотип htmlacademy"
+              width="115"
+              height="33"
+            />
+          </a>
+        </div>
       </section>
     </footer>
   </body>
