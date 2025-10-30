@@ -8,15 +8,17 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <img
-          src="images/icons/navigation-logo.svg"
-          alt="Логотип города Седона"
-          class="page-header-logo"
-          width="140"
-          height="70"
-        />
+        <div class="container-navigation-logo">
+          <img
+            src="images/icons/navigation-logo.svg"
+            alt="Логотип города Седона"
+            class="page-header-logo"
+            width="140"
+            height="70"
+          />
+        </div>
 
-        <ul class="navigation-list">
+        <ul class="navigation-list navigation-page">
           <li class="navigation-item">
             <a class="navigation-link active" href="#">Главая</a>
           </li>
@@ -30,14 +32,14 @@
 
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link search-svg" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link favorites-svg" href="#">
               <span class="visually-hidden"> Избранное</span>
-              <span class="counter">12</span>
+              <span class="favorites-counter">12</span>
             </a>
           </li>
           <li class="navigation-item">
@@ -74,7 +76,7 @@
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
           <ul class="advantages-list">
-            <li class="advantages-item side-image image-right">
+            <li class="advantages-item side-image">
               <div class="text-wrapper">
                 <h3 class="header-3 subscription">Настоящий городок</h3>
                 <p class="advantages-description subscription">
@@ -93,27 +95,33 @@
             </li>
 
             <li class="advantages-item saturated-12">
-              <h3 class="header-3">Небольшая площадь</h3>
-              <p class="advantages-description">
-                Все достопримечательности находятся очень близко
-              </p>
+              <div class="text-wrapper">
+                <h3 class="header-3">Небольшая площадь</h3>
+                <p class="advantages-description">
+                  Все достопримечательности находятся очень близко
+                </p>
+              </div>
             </li>
 
             <li class="advantages-item saturated-20">
-              <h3 class="header-3">Красивая дорога</h3>
-              <p class="advantages-description">
-                Ехать в Седону из Лас-Вегаса совсем не скучно!
-              </p>
+              <div class="text-wrapper">
+                <h3 class="header-3">Красивая дорога</h3>
+                <p class="advantages-description">
+                  Ехать в Седону из Лас-Вегаса совсем не скучно!
+                </p>
+              </div>
             </li>
 
             <li class="advantages-item saturated-12">
-              <h3 class="header-3">Мало туристов</h3>
-              <p class="advantages-description">
-                Большинство едет в Гранд Каньон и толпится там
-              </p>
+              <div class="text-wrapper">
+                <h3 class="header-3">Мало туристов</h3>
+                <p class="advantages-description">
+                  Большинство едет в Гранд Каньон и толпится там
+                </p>
+              </div>
             </li>
 
-            <li class="advantages-item side-image image-left">
+            <li class="advantages-item side-image">
               <div class="image-wrapper">
                 <img
                   class="advantages-img"
@@ -146,41 +154,53 @@
           <h2 class="visually-hidden">Рекомендации</h2>
 
           <ul class="recommendations-list">
-            <li class="recommendations-item hotel-logo saturated-20">
-              <h3 class="header-3">Жильё</h3>
-              <p class="recommendations-description">
-                Рекомендуем пожить в настоящем мотеле, всё как в кино!
-              </p>
+            <li class="recommendations-item saturated-20">
+              <div class="recommendations-item-container">
+                <div class="hotel-logo"></div>
+                <h3 class="header-3">Жильё</h3>
+                <p class="recommendations-description">
+                  Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                </p>
+              </div>
             </li>
 
-            <li class="recommendations-item food-logo saturated-12">
-              <h3 class="header-3">Еда</h3>
-              <p class="recommendations-description">
-                Всегда заказывайте топовый фирменный бургер, вы не
-                разочаруетесь!
-              </p>
+            <li class="recommendations-item saturated-12">
+              <div class="recommendations-item-container">
+                <div class="food-logo"></div>
+                <h3 class="header-3">Еда</h3>
+                <p class="recommendations-description">
+                  Всегда заказывайте топовый фирменный бургер, вы не
+                  разочаруетесь!
+                </p>
+              </div>
             </li>
 
-            <li class="recommendations-item present-logo saturated-20">
-              <h3 class="header-3">Сувениры</h3>
-              <p class="recommendations-description">
-                Не только китайского, но и настоящего местного производства!
-              </p>
+            <li class="recommendations-item saturated-20">
+              <div class="recommendations-item-container">
+                <div class="present-logo"></div>
+                <h3 class="header-3">Сувениры</h3>
+                <p class="recommendations-description">
+                  Не только китайского, но и настоящего местного производства!
+                </p>
+              </div>
             </li>
           </ul>
         </section>
 
         <section class="hotel-search">
-          <h2 class="visually-hidden">Поиск отеля</h2>
-          <p class="hotel-search-description"><b>Заинтересовались?</b></p>
-          <p class="intro-description">
-            Укажите предполагаемые даты поездки, и мы покажем вам лучшие
-            предложения гостиниц в Седоне
-          </p>
-
-          <a class="button button-main big-size" href="catalog.html"
-            >Поиск гостиницы в Седоне</a
-          >
+          <div class="hotel-search-container">
+            <h2 class="visually-hidden">Поиск отеля</h2>
+            <p class="hotel-search-description"><b>Заинтересовались?</b></p>
+            <p class="intro-description">
+              Укажите предполагаемые даты поездки, <br />
+              и мы покажем вам лучшие предложения гостиниц в Седоне
+            </p>
+            <div class="bottom-container">
+              <a class="button button-main big-size" href="catalog.html"
+                >Поиск гостиницы в Седоне</a
+              >
+            </div>
+          </div>
         </section>
       </div>
     </main>
@@ -188,21 +208,23 @@
     <footer class="footer-index">
       <div class="page-footer-container">
         <section class="footer-index-newsletter">
-          <h2 class="header-2 subscription">Подпишитесь на рассылку</h2>
-          <p class="intro-description subscription">
-            Только полезная информация и никакого спама, честное бойскаутское!
-          </p>
-          <form class="newsletter-form">
-            <input
-              type="email"
-              name="newsletter-email"
-              placeholder="Ваш e-mail"
-              required
-            />
-            <button class="button button-additional big-size" type="submit">
-              Подписаться
-            </button>
-          </form>
+          <div class="footer-index-container">
+            <h2 class="header-2 subscription">Подпишитесь на рассылку</h2>
+            <p class="intro-description subscription">
+              Только полезная информация и никакого спама, честное бойскаутское!
+            </p>
+            <form class="newsletter-form">
+              <input
+                type="email"
+                name="newsletter-email"
+                placeholder="Ваш e-mail"
+                required
+              />
+              <button class="button button-additional big-size" type="submit">
+                Подписаться
+              </button>
+            </form>
+          </div>
         </section>
 
         <section class="contacts">
