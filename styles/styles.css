@@ -21,11 +21,9 @@ body {
 body {
   font-family: "PT Sans", sans-serif;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   font-size: 20px;
   margin: 0;
-  display: flex;
-  flex-direction: column;
 }
 
 a {
@@ -39,6 +37,12 @@ strong {
 ul {
   list-style-type: none;
   padding: 0;
+}
+.body-inner {
+  background-color: #ffffff;
+  width: 1200px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
 }
 .button {
   font-family: "PT Sans", sans-serif;
@@ -278,11 +282,12 @@ ul {
   margin: 0;
   padding: 0;
   text-align: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 }
 .recommendations-item {
-  width: 400px;
+  max-width: 400px;
   padding: 0 85px;
   display: flex;
   flex-direction: column;
@@ -584,7 +589,7 @@ ul {
 .hotel-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-direction: row;
   gap: 16px;
 }
