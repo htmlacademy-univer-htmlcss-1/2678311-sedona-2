@@ -177,6 +177,16 @@ ul {
   line-height: 24px;
   font-weight: 700;
   margin: 0;
+  position: relative;
+}
+.navigation-item .active::before {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  left: 15px;
+  height: 2px;
+  background-color: #756257;
+  content: "";
 }
 
 .navigation-user .navigation-link {
@@ -319,7 +329,6 @@ ul {
   font-weight: 400;
   align-items: center;
   margin: 0;
-  padding-top: 30px;
 }
 
 .advantages-item.side-image {
@@ -328,8 +337,9 @@ ul {
 }
 .line {
   width: 60px;
-  height: 2px;
+  min-height: 2px;
   border: 0;
+  margin: 0;
 }
 .side-image .line {
   background-color: rgba(255, 255, 255, 0.3);
@@ -346,13 +356,13 @@ ul {
   flex-direction: column;
   justify-content: center;
   min-height: 385px;
+  align-items: center;
+  row-gap: 30px;
 }
 .image-wrapper {
   height: 385px;
 }
-.advantages-list .header-3 {
-  padding-bottom: 30px;
-}
+
 .subscription {
   color: #ffffff;
 }
@@ -719,6 +729,7 @@ ul {
   border: 1px solid #e6e6e6;
   margin: 0;
 }
+
 .select-control {
   font-size: 18px;
   line-height: 21px;
@@ -727,6 +738,11 @@ ul {
   height: 49px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
+  background-image: url("/images/icons/arrow.svg");
+  background-position: right 20px center;
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  appearance: none;
 }
 .select-control:hover {
   border: 2px solid #68a2ca;
