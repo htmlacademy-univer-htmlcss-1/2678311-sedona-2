@@ -202,13 +202,14 @@ ul {
 .favorites-counter {
   position: absolute;
   top: 24%;
-  right: 6px;
+  right: 5px;
   background-color: #7db54f;
   border-radius: 50%;
-  padding: 2px;
+  padding: 3px;
   font-size: 10px;
   line-height: 10px;
   color: #ffffff;
+  font-weight: 400;
 }
 
 .navigation-page a {
@@ -366,9 +367,11 @@ ul {
 .subscription {
   color: #ffffff;
 }
-.promo {
+.promo-container {
   text-align: center;
   padding: 64px 0;
+  margin: 0 auto;
+  max-width: 505px;
 }
 .saturated-20 {
   background-color: rgba(130, 179, 211, 0.2);
@@ -456,6 +459,10 @@ ul {
 .main-catalog {
   margin: 0;
   padding: 0;
+}
+.footer-container {
+  max-width: 475px;
+  margin: 0 auto;
 }
 .page-footer-container {
   display: flex;
@@ -843,6 +850,7 @@ ul {
   width: 140px;
   height: 36px;
   padding: 0;
+  cursor: pointer;
 }
 .info-right {
   text-align: right;
@@ -854,12 +862,19 @@ ul {
   column-gap: 6px;
   align-items: center;
 }
-.star {
-  background-image: url("../images/icons/star.svg");
-  background-repeat: no-repeat;
+.star-list-container {
+  position: relative;
   width: 18px;
   height: 17px;
-  position: static;
+}
+.star {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #83b3d3;
 }
 
 .rating {
