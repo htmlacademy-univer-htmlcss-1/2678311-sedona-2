@@ -814,7 +814,7 @@ ul {
   line-height: 24px;
   appearance: textfield;
   border: none;
-  padding: 0;
+  padding: 0 5px 0 0;
   width: 100%;
   outline: none;
   background-color: transparent;
@@ -1179,7 +1179,7 @@ ul {
   background-color: #e6e6e6;
 }
 .modal-close-button:focus {
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
 }
 
 .modal-close-button:active {
@@ -1220,11 +1220,7 @@ ul {
 }
 .field:focus {
   background-color: #e6e6e6;
-  border: 3px solid #83b3d3;
-}
-.field:active {
-  background-color: #e6e6e6;
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
 }
 
 .field-group {
@@ -1233,6 +1229,16 @@ ul {
   justify-content: space-between;
   align-items: center;
   position: relative;
+}
+
+.modal-input-container .field:hover {
+  background-color: #f2f2f2;
+}
+.modal-input-container .field:focus {
+  background-color: #f2f2f2;
+}
+.modal-input-container .field:active {
+  background-color: #f2f2f2;
 }
 
 .field-input-container {
